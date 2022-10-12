@@ -62,3 +62,8 @@ if(amal === "+"){
     alert("Amal kiritmadiz!!")
 }
 
+
+
+var text = "jamshid";
+
+console.log(text[0].toUpperCase() + "amshid");
