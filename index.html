@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <title>Calc</title>
+</head>
+<body>
+
+    <section class="calculator">
+        <div class="container">
+            <h1 class="calculator text-uppercase  text-center fs-1  fw-bold my-5">simple calculator</h1>
+            <form method="POST" class="form">
+                <input class="calc__input-first form-control form-control-lg shadow w-50 mx-auto mb-4" type="text"  placeholder="Enter your First Number" required>
+                <select class="calc__select shadow-sm w-50 mx-auto form-select mb-4" aria-label="Default select example">
+                    <option selected hidden>Select an action</option>
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                    <option value="%">%</option>
+                  </select>
+                <input class="calc__input-second form-control form-control-lg  shadow w-50 mx-auto mb-4" type="text" placeholder="Enter your Second Number" required>
+                <div class="d-flex justify-content-center mb-4">
+                    <button class="calc__btn btn btn-lg shadow btn-outline-info me-3" type="submit">Answer</button>
+                    <button class="calc__btn-reset btn btn-lg shadow-lg  btn-outline-danger ms-3" type="reset">Reset</button>
+                </div>
+            </form>
+            <div class="calc__result alert alert-info shadow-lg  w-50 mx-auto"></div>
+        </div>
+    </section>
+
+
+
+    <script src="main.js"></script>
+
+</body>
+</html>
